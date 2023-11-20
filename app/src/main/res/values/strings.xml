@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LabFour1030</string>
+    <string name="list_view_hint"><![CDATA["    <string name=\"list_view_hint\">Your ListView Hint Text</string>\n"]]></string>
+    <string name="add_button_text"><![CDATA["    <string name=\"new_note_button_text\">Your New Note Button Text</string>\n"]]></string>
+</resources>

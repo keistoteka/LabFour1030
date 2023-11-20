@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+    <!-- Header EditText -->
+    <EditText
+        android:id="@+id/edit_text_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Note Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="14dp"
+        android:inputType="textCapSentences" />
+
+    <!-- Body EditText -->
+    <EditText
+        android:id="@+id/edit_text_body"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Enter Note Content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_header"
+        app:layout_constraintBottom_toTopOf="@id/button_save"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="14dp"
+        android:inputType="textMultiLine" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Note"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
